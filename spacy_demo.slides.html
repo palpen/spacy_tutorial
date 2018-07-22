@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<title>Untitled slides</title>
+<title>spacy_demo slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11905,7 +11905,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="spaCy">spaCy<a class="anchor-link" href="#spaCy">&#182;</a></h1>
+<h1 id="Overview-and-Demo-of-spaCy">Overview and Demo of spaCy<a class="anchor-link" href="#Overview-and-Demo-of-spaCy">&#182;</a></h1><h3 id="by-Palermo-Penano">by Palermo Penano<a class="anchor-link" href="#by-Palermo-Penano">&#182;</a></h3>
 </div>
 </div>
 </div></section></section><section><section>
@@ -11935,12 +11935,15 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="What-is-spaCy?">What is spaCy?<a class="anchor-link" href="#What-is-spaCy?">&#182;</a></h1><ul>
-<li>Industrial-strength natural language processing library</li>
-<li>Open-source</li>
-<li>Written in Cython (SOURCE---WHAT IS CYTHON???)</li>
+<li>"Industrial-strength natural language processing library" developed by Explosion AI</li>
+<li>Free and open-source (<a href="https://github.com/explosion/spaCy">GitHub page</a>)</li>
+<li>Designed for production use</li>
+<li>Native to Python (written in Cython) (SOURCE---WHAT IS CYTHON???)</li>
+<li>Very good for information extraction and text preprocessing</li>
+<li>See <a href="https://spacy.io/usage/spacy-101">spaCy 101</a> for more detail</li>
 </ul>
-<h2 id="Other-Libraries">Other Libraries<a class="anchor-link" href="#Other-Libraries">&#182;</a></h2><h2 id="What-can-spaCy-do?">What can spaCy do?<a class="anchor-link" href="#What-can-spaCy-do?">&#182;</a></h2><ul>
-<li>Tokenization, part-of-speech tagging, sentence segmentation, dependency parsing, entity recognition, + more</li>
+<h2 id="Other-libraries-in-similar-space">Other libraries in similar space<a class="anchor-link" href="#Other-libraries-in-similar-space">&#182;</a></h2><ul>
+<li>NLTK, CoreNLP, SyntexNet, Gensim,...</li>
 </ul>
 
 </div>
@@ -11950,7 +11953,15 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src=./imgs/feature_comparison.png alt="drawing" width="500px"/></p>
+<h1 id="What-can-spaCy-do?">What can spaCy do?<a class="anchor-link" href="#What-can-spaCy-do?">&#182;</a></h1><ul>
+<li>Tokenization</li>
+<li>Part-of-speech tagging (WHAT IS THIS???)</li>
+<li>Sentence segmentation (HOW IS THIS DONE???)</li>
+<li>Dependency parsing (WHAT IS THIS???)</li>
+<li>Entity recognition</li>
+<li>Multi-language support</li>
+<li>+ more</li>
+</ul>
 
 </div>
 </div>
@@ -11959,7 +11970,9 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Alternatives">Alternatives<a class="anchor-link" href="#Alternatives">&#182;</a></h1>
+<p><img src=./imgs/feature_comparison.png alt="drawing" width="500px"/>
+<a href="https://spacy.io/usage/facts-figures#comparison">Source</a></p>
+
 </div>
 </div>
 </div></section></section><section><section>
@@ -11967,7 +11980,9 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Performance-Comparison">Performance Comparison<a class="anchor-link" href="#Performance-Comparison">&#182;</a></h1>
+<h1 id="Performance-Comparison">Performance Comparison<a class="anchor-link" href="#Performance-Comparison">&#182;</a></h1><p><img src=./imgs/compare_performance.png alt="drawing" width="500px"/>
+<a href="https://spacy.io/usage/facts-figures#speed-comparison">Source</a></p>
+
 </div>
 </div>
 </div></section></section><section><section>
@@ -11991,6 +12006,20 @@ a.anchor-link {
 <h1 id="Demo">Demo<a class="anchor-link" href="#Demo">&#182;</a></h1>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Lessons">Lessons<a class="anchor-link" href="#Lessons">&#182;</a></h1><ul>
+<li>spaCy --- very easy to use compared to other libraries but still gives simililar or better performance<ul>
+<li>COMPARE WITH NLTK, CoreNLP, </li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -11998,6 +12027,7 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Resources">Resources<a class="anchor-link" href="#Resources">&#182;</a></h1><ul>
 <li><a href="https://spacy.io/usage/facts-figures">spaCy homepage</a></li>
+<li><a href="https://spacy.io/usage/spacy-101">spaCy 101</a></li>
 <li><a href="https://aclweb.org/anthology/P/P15/P15-1038.pdf">It Depends: Dependency Parser Comparison Using A Web-based Evaluation Tool by Choi, Tetreault, and Stent</a></li>
 </ul>
 
@@ -12018,12 +12048,17 @@ a.anchor-link {
 <li><code>jupyter nbconvert Untitled.ipynb --to slides --post serve</code></li>
 </ul>
 </li>
+<li>To Learn<ul>
+<li>Dependency parsing</li>
+<li>Installation and getting started with NLTK and CoreNLP (using stanfordcorenlp python wrapper)</li>
+</ul>
+</li>
 </ul>
 
 </div>
 </div>
 </div>
-</aside></section></section>
+</aside>
 </div>
 </div>
 
